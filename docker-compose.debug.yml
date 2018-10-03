@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  unraid-zenphoto:
+    image: unraid-zenphoto
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80

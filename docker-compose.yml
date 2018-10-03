@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  unraid-zenphoto:
+    image: unraid-zenphoto
+    build: .
+    ports:
+      - 5000:80
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./html:/var/www/html
